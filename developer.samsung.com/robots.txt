@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /partner
+Disallow: /partner/
+Disallow: /dashboard
+Disallow: /feed
+Disallow: /login
+Sitemap: https://developer.samsung.com/sitemap.xml

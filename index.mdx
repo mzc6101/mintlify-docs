@@ -1,338 +1,79 @@
 ---
-title: "Samsung Developer Documentation"
-description: "Build extraordinary experiences for Samsung Galaxy devices with our comprehensive developer tools and resources"
+title: "Samsung Developer"
+description: "Use our tools and services to provide an exceptional experience to Samsung users around the world"
+mode: "custom"
 ---
 
+<style>
+  .video-background {{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }}
+  .hero-container {{
+    position: relative;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }}
+  .hero-container h1 {{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #000000;
+  }}
+  .hero-container p {{
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    color: #000000;
+  }}
+  .content-section {{
+    padding: 4rem 2rem;
+  }}
+</style>
 
+<div class="hero-container">
+  <video autoplay loop muted playsinline class="video-background">
+    <source src="/videos/Main_BG_0926.mp4" type="video/mp4" />
+  </video>
+  <h1>Discover and Develop with Samsung</h1>
+  <p>Use our tools and services to provide an exceptional experience to Samsung users around the world</p>
+</div>
 
-<Note>
-This is a **preview documentation** showcasing Mintlify's powerful features styled with Samsung's brand identity. Experience the future of developer documentation.
-</Note>
-
-## Welcome to Samsung Developer
-
-Build innovative apps and services for Samsung Galaxy devices with our comprehensive ecosystem of tools, SDKs, and APIs.
-
-<CardGroup cols={2}>
-  <Card
-    title="Galaxy Mobile SDK"
-    icon="mobile-screen"
-    href="/quickstart"
-    color="#1428A0"
-  >
-    Develop powerful mobile applications for Galaxy smartphones and tablets
-  </Card>
-  <Card
-    title="Galaxy Watch SDK"
-    icon="clock"
-    href="/development"
-    color="#1428A0"
-  >
-    Create health and fitness apps for Galaxy Watch ecosystem
-  </Card>
-  <Card
-    title="SmartThings Platform"
-    icon="house-wifi"
-    href="/api-reference/introduction"
-    color="#1428A0"
-  >
-    Connect and control IoT devices with SmartThings APIs
-  </Card>
-  <Card
-    title="Galaxy AI Features"
-    icon="brain-circuit"
-    href="/essentials/code"
-    color="#1428A0"
-  >
-    Integrate advanced AI capabilities into your applications
-  </Card>
-</CardGroup>
-
-## Developer Journey
-
-<Steps>
-<Step title="Set Up Your Environment">
-  Download Samsung SDK and configure your development environment for Galaxy devices.
-  
-  <CodeGroup>
-    ```bash Android Studio
-    # Download Samsung SDK
-    git clone https://github.com/Samsung/galaxy-sdk
-    cd galaxy-sdk
-    ./install.sh
-    ```
-    
-    ```bash VS Code
-    # Install Samsung Developer Extension
-    code --install-extension samsung.galaxy-dev-tools
-    ```
-  </CodeGroup>
-  
-  <Check>
-  Verify installation by running `samsung-sdk --version`
-  </Check>
-</Step>
-
-<Step title="Choose Your Platform">
-  Select the Samsung platform that best fits your application needs.
-  
-  <Tabs>
-    <Tab title="Galaxy Mobile">
-      Build apps for Samsung Galaxy smartphones and tablets with enhanced features like S Pen integration, DeX mode, and advanced camera APIs.
-      
-      ```kotlin
-      // Example: S Pen integration
-      class MainActivity : AppCompatActivity() {
-          override fun onCreate(savedInstanceState: Bundle?) {
-              super.onCreate(savedInstanceState)
-              
-              // Initialize S Pen features
-              val sPenManager = SPenManager.getInstance()
-              sPenManager.initialize(this)
-          }
-      }
-      ```
-    </Tab>
-    
-    <Tab title="Galaxy Watch">
-      Develop health and fitness applications for Galaxy Watch with access to advanced sensors and health data.
-      
-      ```kotlin
-      // Example: Health data access
-      val healthDataStore = HealthDataStore(context)
-      healthDataStore.getStepCount { stepCount ->
-          // Process step count data
-          updateUI(stepCount)
-      }
-      ```
-    </Tab>
-    
-    <Tab title="SmartThings">
-      Create IoT solutions that connect and control smart home devices through the SmartThings ecosystem.
-      
-      ```javascript
-      // Example: SmartThings API
-      const smartThings = new SmartThingsApi(apiToken)
-      
-      smartThings.devices.list().then(devices => {
-          devices.forEach(device => {
-              console.log(`Device: ${device.name}`)
-          })
-      })
-      ```
-    </Tab>
-  </Tabs>
-</Step>
-
-<Step title="Integrate Samsung Services">
-  Enhance your app with Samsung's unique services and capabilities.
-  
-  <Warning>
-  Make sure to register your app in the Samsung Developer Portal before accessing Samsung services.
-  </Warning>
-</Step>
-
-<Step title="Test and Deploy">
-  Test your application on Samsung devices and deploy to Galaxy Store.
-  
-  <Tip>
-  Use Samsung's Remote Test Lab to test on real devices without physical hardware.
-  </Tip>
-</Step>
-</Steps>
-
-## Featured SDKs and Tools
-
-<AccordionGroup>
-  <Accordion title="Galaxy AI SDK" icon="brain-circuit">
-    Integrate Samsung's advanced AI capabilities into your applications:
-    
-    - **Galaxy AI Translation**: Real-time language translation
-    - **Galaxy AI Vision**: Advanced image recognition and processing
-    - **Galaxy AI Voice**: Natural language processing and voice commands
-    
-    ```kotlin
-    // Example: Galaxy AI Translation
-    val translator = GalaxyAI.getTranslator()
-    translator.translate("Hello World", "ko") { translatedText ->
-        // Handle translated text: "안녕하세요"
-    }
-    ```
-  </Accordion>
-  
-  <Accordion title="Samsung Health SDK" icon="heart-pulse">
-    Access comprehensive health and fitness data from Samsung Health:
-    
-    - Heart rate monitoring
-    - Sleep tracking
-    - Step counting and activity detection
-    - Nutrition and wellness insights
-    
-    <Frame>
-      <img src="/images/hero-light.png" alt="Samsung Health Dashboard" />
-    </Frame>
-  </Accordion>
-  
-  <Accordion title="Samsung Pay SDK" icon="credit-card">
-    Integrate secure payment solutions into your applications:
-    
-    - Contactless payments
-    - Loyalty card integration
-    - Gift card management
-    - Transaction security
-  </Accordion>
-  
-  <Accordion title="Bixby Voice SDK" icon="microphone">
-    Create voice-enabled experiences with Samsung's AI assistant:
-    
-    - Custom voice commands
-    - Natural language understanding
-    - Multi-modal interactions
-    - Smart home control
-  </Accordion>
-</AccordionGroup>
-
-## Samsung Device Ecosystem
-
-Explore the devices and SDKs available for Samsung development. Each device in the Samsung ecosystem offers unique capabilities and development opportunities:
-
-<CardGroup cols={3}>
-  <Card
-    title="Galaxy S24 Ultra"
-    icon="mobile-screen"
-    color="#1428A0"
-  >
-    **Flagship Mobile Development**
-    - 6.8" Dynamic AMOLED 2X Display
-    - Snapdragon 8 Gen 3 Processor
-    - Advanced S Pen Integration
-    - 200MP Camera System
-    
-    **Available SDKs:** Galaxy AI SDK, S Pen SDK, Camera SDK, Samsung Health SDK
-  </Card>
-  
-  <Card
-    title="Galaxy Watch7"
-    icon="clock"
-    color="#1428A0"
-  >
-    **Wearable Health Platform**
-    - 1.5" Super AMOLED Display
-    - Exynos W1000 Processor
-    - Advanced Health Sensors
-    - Fitness Tracking Capabilities
-    
-    **Available SDKs:** Health SDK, Watch Face SDK, Fitness SDK, Voice SDK
-  </Card>
-  
-  <Card
-    title="Galaxy Buds3 Pro"
-    icon="headphones"
-    color="#1428A0"
-  >
-    **Audio & AI Experience**
-    - Dual-core Audio Processor
-    - Active Noise Cancellation
-    - Galaxy AI Integration
-    - Spatial Audio Support
-    
-    **Available SDKs:** Audio SDK, Voice SDK, SmartThings SDK, AI SDK
-  </Card>
-</CardGroup>
-
-## Developer Resources
-
-Get the support you need to build amazing Samsung experiences.
-
-<CardGroup cols={3}>
-  <Card
-    title="Code Lab"
-    icon="flask"
-    href="https://developer.samsung.com/codelab"
-  >
-    Interactive tutorials and hands-on learning experiences
-  </Card>
-  <Card
-    title="Remote Test Lab"
-    icon="vial"
-    href="https://developer.samsung.com/remote-test-lab"
-  >
-    Test your apps on real Samsung devices remotely
-  </Card>
-  <Card
-    title="Developer Forums"
-    icon="users"
-    href="https://forum.developer.samsung.com"
-  >
-    Connect with Samsung developer community
-  </Card>
-  <Card
-    title="Galaxy Store"
-    icon="store"
-    href="https://galaxystore.samsung.com"
-  >
-    Distribute your apps to millions of users
-  </Card>
-  <Card
-    title="Design System"
-    icon="palette"
-    href="https://developer.samsung.com/one-ui"
-  >
-    Follow One UI design guidelines
-  </Card>
-  <Card
-    title="API Documentation"
-    icon="book-open"
-    href="/api-reference/introduction"
-  >
-    Comprehensive API references and guides
-  </Card>
-</CardGroup>
-
-## Latest Updates
-
-<Update description="November 2024">
-  ### Galaxy AI SDK 2.0 Released
-  
-  Enhanced AI capabilities with improved performance and new features:
-  - Real-time object detection
-  - Advanced natural language processing
-  - Improved translation accuracy
-  - New voice synthesis options
-</Update>
-
-## Getting Started
-
-Ready to start building? Choose your path:
-
-<Columns cols={2}>
-  <div>
-    ### New to Samsung Development?
-    
+<div class="content-section">
+  <CardGroup cols={{2}}>
     <Card
-      title="Quick Start Guide"
-      icon="rocket"
-      href="/quickstart"
-      horizontal
+      title="Emulator Skins for New Foldables"
+      href="/galaxy-emulator-skin/galaxy-z.html"
     >
-      Get up and running in 10 minutes with our comprehensive guide.
+      Download the all-new emulator skins for Galaxy Z Fold7, Z Flip7, and Flip7 FE models.
     </Card>
-  </div>
-  
-  <div>
-    ### Experienced Developer?
-    
     <Card
-      title="API Reference"
-      icon="code"
-      href="/api-reference/introduction"
-      horizontal
+      title="Customize Your Watch Face"
+      href="/codelab/watch-face-studio/edge-complication-digital-clock.html"
     >
-      Jump straight into our detailed API documentation.
+      Learn how to design a watch face with customizable edge complication slots and digital clock.
     </Card>
-  </div>
-</Columns>
-
-<Info>
-This documentation is powered by **Mintlify** - showcasing advanced documentation features including custom React components, interactive code examples, and beautiful styling that adapts to your brand.
-</Info>
+    <Card
+      title="Implement in-app subscriptions"
+      href="/codelab/iap/in-app-subscriptions.html"
+    >
+      Learn how to use the Samsung IAP SDK to enable in-app subscription purchases and upgrades.
+    </Card>
+    <Card
+      title="Explore More"
+      href="/codelab"
+    >
+      Code Lab is an education platform that engages anyone to understand, through a series of topics, all SDKs and tools powered by Samsung.
+    </Card>
+  </CardGroup>
+</div>

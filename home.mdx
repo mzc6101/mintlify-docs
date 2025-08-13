@@ -1,0 +1,585 @@
+---
+title: "Samsung Developer"
+description: "Use our tools and services to provide an exceptional experience to Samsung users around the world"
+mode: "custom"
+---
+
+<div style={{
+  width: '100%',
+  minHeight: '100vh',
+  background: '#ffffff'
+}}>
+  {/* Hero Section with Video Background */}
+  <section style={{
+    position: 'relative',
+    height: '70vh',
+    background: '#f6f7fb',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    overflow: 'hidden'
+  }}>
+    <video 
+      autoPlay 
+      loop 
+      muted 
+      playsInline
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+        zIndex: 1
+      }}
+    >
+      <source src="/videos/Main_BG_0926.mp4" type="video/mp4" />
+    </video>
+    
+    <div style={{
+      position: 'relative',
+      zIndex: 2,
+      textAlign: 'center',
+      color: '#000',
+      maxWidth: '800px',
+      padding: '0 2rem'
+    }}>
+      <h1 style={{
+        fontSize: '4rem',
+        fontWeight: 'bold',
+        marginBottom: '1.5rem',
+        lineHeight: '1.1'
+      }}>
+        Discover and Develop<br />
+        with Samsung
+      </h1>
+      <p style={{
+        fontSize: '1.25rem',
+        marginBottom: '2rem',
+        opacity: 0.8
+      }}>
+        Use our tools and services to provide an exceptional experience to Samsung users around the world
+      </p>
+    </div>
+  </section>
+
+  {/* Featured Content Banner */}
+  <section style={{
+    padding: '4rem 2rem',
+    maxWidth: '1200px',
+    margin: '0 auto'
+  }}>
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+      gap: '2rem'
+    }}>
+      <div style={{
+        background: '#fff',
+        border: '1px solid #e1e5e9',
+        borderRadius: '8px',
+        padding: '1.5rem',
+        transition: 'border-color 0.2s ease, box-shadow 0.2s ease',
+        cursor: 'pointer'
+      }} onMouseEnter={(e) => {
+        e.target.style.borderColor = '#d0d7de';
+        e.target.style.boxShadow = '0 1px 3px rgba(0,0,0,0.06)';
+      }} onMouseLeave={(e) => {
+        e.target.style.borderColor = '#e1e5e9';
+        e.target.style.boxShadow = 'none';
+      }}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'flex-start',
+          gap: '1rem'
+        }}>
+          <div style={{
+            width: '40px',
+            height: '40px',
+            background: '#f6f8fa',
+            borderRadius: '6px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexShrink: 0
+          }}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#656d76" strokeWidth="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <div style={{ flex: 1 }}>
+            <h4 style={{ 
+              fontSize: '1rem', 
+              fontWeight: '600', 
+              marginBottom: '0.5rem',
+              color: '#24292f',
+              lineHeight: '1.25'
+            }}>
+              Emulator Skins for New Foldables
+            </h4>
+            <p style={{ 
+              fontSize: '0.875rem', 
+              color: '#656d76',
+              lineHeight: '1.5',
+              margin: 0
+            }}>
+              Download the all-new emulator skins for Galaxy Z Fold7, Z Flip7, and Flip7 FE models.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div style={{
+        background: '#fff',
+        border: '1px solid #e1e5e9',
+        borderRadius: '8px',
+        padding: '1.5rem',
+        transition: 'border-color 0.2s ease, box-shadow 0.2s ease',
+        cursor: 'pointer'
+      }} onMouseEnter={(e) => {
+        e.target.style.borderColor = '#d0d7de';
+        e.target.style.boxShadow = '0 1px 3px rgba(0,0,0,0.06)';
+      }} onMouseLeave={(e) => {
+        e.target.style.borderColor = '#e1e5e9';
+        e.target.style.boxShadow = 'none';
+      }}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'flex-start',
+          gap: '1rem'
+        }}>
+          <div style={{
+            width: '40px',
+            height: '40px',
+            background: '#f6f8fa',
+            borderRadius: '6px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexShrink: 0
+          }}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#656d76" strokeWidth="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12,6 12,12 16,14"/>
+            </svg>
+          </div>
+          <div style={{ flex: 1 }}>
+            <h4 style={{ 
+              fontSize: '1rem', 
+              fontWeight: '600', 
+              marginBottom: '0.5rem',
+              color: '#24292f',
+              lineHeight: '1.25'
+            }}>
+              Customize Your Watch Face
+            </h4>
+            <p style={{ 
+              fontSize: '0.875rem', 
+              color: '#656d76',
+              lineHeight: '1.5',
+              margin: 0
+            }}>
+              Learn how to design a watch face with customizable edge complication slots and digital clock
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div style={{
+        background: '#fff',
+        border: '1px solid #e1e5e9',
+        borderRadius: '8px',
+        padding: '1.5rem',
+        transition: 'border-color 0.2s ease, box-shadow 0.2s ease',
+        cursor: 'pointer'
+      }} onMouseEnter={(e) => {
+        e.target.style.borderColor = '#d0d7de';
+        e.target.style.boxShadow = '0 1px 3px rgba(0,0,0,0.06)';
+      }} onMouseLeave={(e) => {
+        e.target.style.borderColor = '#e1e5e9';
+        e.target.style.boxShadow = 'none';
+      }}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'flex-start',
+          gap: '1rem'
+        }}>
+          <div style={{
+            width: '40px',
+            height: '40px',
+            background: '#f6f8fa',
+            borderRadius: '6px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexShrink: 0
+          }}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#656d76" strokeWidth="1.5">
+              <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+              <line x1="1" y1="10" x2="23" y2="10"/>
+            </svg>
+          </div>
+          <div style={{ flex: 1 }}>
+            <h4 style={{ 
+              fontSize: '1rem', 
+              fontWeight: '600', 
+              marginBottom: '0.5rem',
+              color: '#24292f',
+              lineHeight: '1.25'
+            }}>
+              Implement in-app subscriptions
+            </h4>
+            <p style={{ 
+              fontSize: '0.875rem', 
+              color: '#656d76',
+              lineHeight: '1.5',
+              margin: 0
+            }}>
+              Learn how to use the Samsung IAP SDK to enable in-app subscription purchases and upgrades
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Latest Blog Section */}
+  <section style={{
+    background: '#f8f9fa',
+    padding: '4rem 2rem'
+  }}>
+    <div style={{
+      maxWidth: '1200px',
+      margin: '0 auto'
+    }}>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: '3rem'
+      }}>
+        <div>
+          <h3 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>Latest Blog</h3>
+          <p style={{ color: '#666', fontSize: '1.1rem' }}>Find in-depth technical content written by Samsung developers</p>
+        </div>
+        <a href="/blog" style={{
+          color: '#1428A0',
+          textDecoration: 'none',
+          fontWeight: 'bold',
+          textTransform: 'uppercase'
+        }}>
+          Go to Blog →
+        </a>
+      </div>
+
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+        gap: '2rem'
+      }}>
+        {/* Blog Cards */}
+        <div style={{
+          background: '#fff',
+          borderRadius: '12px',
+          overflow: 'hidden',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+        }}>
+          <div style={{
+            height: '180px',
+            background: 'linear-gradient(135deg, #FF6B6B, #4ECDC4)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: 'white',
+            fontSize: '1.2rem',
+            fontWeight: 'bold'
+          }}>
+            Heart Rate Transfer
+          </div>
+          <div style={{ padding: '1.5rem' }}>
+            <div style={{ marginBottom: '1rem' }}>
+              <span style={{
+                background: '#1428A0',
+                color: 'white',
+                padding: '0.25rem 0.75rem',
+                borderRadius: '4px',
+                fontSize: '0.8rem',
+                fontWeight: 'bold',
+                marginRight: '0.5rem'
+              }}>
+                Tutorials
+              </span>
+              <span style={{ color: '#666', fontSize: '0.9rem' }}>Health, Galaxy Watch, Mobile</span>
+            </div>
+            <h3 style={{ fontSize: '1.1rem', fontWeight: 'bold', marginBottom: '0.75rem', lineHeight: '1.4' }}>
+              Measure and Transfer Heart Rate Data from Galaxy Watch to a Paired Android Phone
+            </h3>
+            <p style={{ color: '#666', fontSize: '0.9rem', lineHeight: '1.5', marginBottom: '1rem' }}>
+              This tutorial describes the way to track heart rate, including inter-beat interval using Samsung Health Sensor SDK
+            </p>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.8rem', color: '#888' }}>
+              <span>Samsung Developers</span>
+              <span>Jul 31, 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Explore More Section */}
+  <section style={{
+    padding: '4rem 2rem'
+  }}>
+    <div style={{
+      maxWidth: '1200px',
+      margin: '0 auto'
+    }}>
+      <h2 style={{
+        fontSize: '2.5rem',
+        fontWeight: 'bold',
+        textAlign: 'center',
+        marginBottom: '3rem'
+      }}>
+        Explore More
+      </h2>
+
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+        gap: '2rem'
+      }}>
+        {/* Code Lab Card */}
+        <div style={{
+          background: '#fff',
+          border: '1px solid #e1e5e9',
+          borderRadius: '8px',
+          padding: '1.5rem',
+          transition: 'border-color 0.2s ease, box-shadow 0.2s ease',
+          cursor: 'pointer'
+        }} onMouseEnter={(e) => {
+          e.target.style.borderColor = '#d0d7de';
+          e.target.style.boxShadow = '0 1px 3px rgba(0,0,0,0.06)';
+        }} onMouseLeave={(e) => {
+          e.target.style.borderColor = '#e1e5e9';
+          e.target.style.boxShadow = 'none';
+        }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            gap: '1rem'
+          }}>
+            <div style={{
+              width: '40px',
+              height: '40px',
+              background: '#f6f8fa',
+              borderRadius: '6px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0
+            }}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#656d76" strokeWidth="1.5">
+                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9,22 9,12 15,12 15,22"/>
+              </svg>
+            </div>
+            <div style={{ flex: 1 }}>
+              <h4 style={{ 
+                fontSize: '1rem', 
+                fontWeight: '600', 
+                marginBottom: '0.5rem',
+                color: '#24292f',
+                lineHeight: '1.25'
+              }}>
+                Code Lab
+              </h4>
+              <p style={{ 
+                fontSize: '0.875rem', 
+                color: '#656d76',
+                lineHeight: '1.5',
+                margin: 0
+              }}>
+                Code Lab is an education platform that engages anyone to understand, through a series of topics, all SDKs and tools powered by Samsung.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Remote Test Lab Card */}
+        <div style={{
+          background: '#fff',
+          border: '1px solid #e1e5e9',
+          borderRadius: '8px',
+          padding: '1.5rem',
+          transition: 'border-color 0.2s ease, box-shadow 0.2s ease',
+          cursor: 'pointer'
+        }} onMouseEnter={(e) => {
+          e.target.style.borderColor = '#d0d7de';
+          e.target.style.boxShadow = '0 1px 3px rgba(0,0,0,0.06)';
+        }} onMouseLeave={(e) => {
+          e.target.style.borderColor = '#e1e5e9';
+          e.target.style.boxShadow = 'none';
+        }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            gap: '1rem'
+          }}>
+            <div style={{
+              width: '40px',
+              height: '40px',
+              background: '#f6f8fa',
+              borderRadius: '6px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0
+            }}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#656d76" strokeWidth="1.5">
+                <path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1m16 0H4m0 0v-3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3"/>
+              </svg>
+            </div>
+            <div style={{ flex: 1 }}>
+              <h4 style={{ 
+                fontSize: '1rem', 
+                fontWeight: '600', 
+                marginBottom: '0.5rem',
+                color: '#24292f',
+                lineHeight: '1.25'
+              }}>
+                Remote Test Lab
+              </h4>
+              <p style={{ 
+                fontSize: '0.875rem', 
+                color: '#656d76',
+                lineHeight: '1.5',
+                margin: 0
+              }}>
+                Don't have a Samsung device to test your app? No problem! Test your apps on the latest Samsung Galaxy devices in our Remote Test Lab.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Galaxy Store Card */}
+        <div style={{
+          background: '#fff',
+          border: '1px solid #e1e5e9',
+          borderRadius: '8px',
+          padding: '1.5rem',
+          transition: 'border-color 0.2s ease, box-shadow 0.2s ease',
+          cursor: 'pointer'
+        }} onMouseEnter={(e) => {
+          e.target.style.borderColor = '#d0d7de';
+          e.target.style.boxShadow = '0 1px 3px rgba(0,0,0,0.06)';
+        }} onMouseLeave={(e) => {
+          e.target.style.borderColor = '#e1e5e9';
+          e.target.style.boxShadow = 'none';
+        }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            gap: '1rem'
+          }}>
+            <div style={{
+              width: '40px',
+              height: '40px',
+              background: '#f6f8fa',
+              borderRadius: '6px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0
+            }}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#656d76" strokeWidth="1.5">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+              </svg>
+            </div>
+            <div style={{ flex: 1 }}>
+              <h4 style={{ 
+                fontSize: '1rem', 
+                fontWeight: '600', 
+                marginBottom: '0.5rem',
+                color: '#24292f',
+                lineHeight: '1.25'
+              }}>
+                Galaxy Store
+              </h4>
+              <p style={{ 
+                fontSize: '0.875rem', 
+                color: '#656d76',
+                lineHeight: '1.5',
+                margin: 0
+              }}>
+                Are you a first timer? Haven't built an app for a Samsung device yet? No problem. Find everything you need to create your apps, products, and solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Developer Support Card */}
+        <div style={{
+          background: '#fff',
+          border: '1px solid #e1e5e9',
+          borderRadius: '8px',
+          padding: '1.5rem',
+          transition: 'border-color 0.2s ease, box-shadow 0.2s ease',
+          cursor: 'pointer'
+        }} onMouseEnter={(e) => {
+          e.target.style.borderColor = '#d0d7de';
+          e.target.style.boxShadow = '0 1px 3px rgba(0,0,0,0.06)';
+        }} onMouseLeave={(e) => {
+          e.target.style.borderColor = '#e1e5e9';
+          e.target.style.boxShadow = 'none';
+        }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            gap: '1rem'
+          }}>
+            <div style={{
+              width: '40px',
+              height: '40px',
+              background: '#f6f8fa',
+              borderRadius: '6px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0
+            }}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#656d76" strokeWidth="1.5">
+                <path d="M9 12l2 2 4-4"/>
+                <path d="M21 12c.552 0 1-.448 1-1V8c0-.552-.448-1-1-1h-1l-1-1V3c0-.552-.448-1-1-1H6c-.552 0-1 .448-1 1v3l-1 1H3c-.552 0-1 .448-1 1v3c0 .552.448 1 1 1h1l1 1v3c0 .552.448 1 1 1h12c.552 0 1-.448 1-1v-3l1-1h1z"/>
+              </svg>
+            </div>
+            <div style={{ flex: 1 }}>
+              <h4 style={{ 
+                fontSize: '1rem', 
+                fontWeight: '600', 
+                marginBottom: '0.5rem',
+                color: '#24292f',
+                lineHeight: '1.25'
+              }}>
+                Developer Support
+              </h4>
+              <p style={{ 
+                fontSize: '0.875rem', 
+                color: '#656d76',
+                lineHeight: '1.5',
+                margin: 0
+              }}>
+                Need developer technical support? Login with your Samsung Account to submit a support request ticket and our team will respond within 1 business day.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

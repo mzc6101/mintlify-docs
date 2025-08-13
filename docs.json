@@ -11,58 +11,166 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Developer Guide",
+        "tab": "Learn",
         "groups": [
           {
             "group": "Getting Started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "home",
+              "quickstart"
             ]
           },
           {
-            "group": "Mobile & Wearable",
+            "group": "Code Lab",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "learn/code-lab/introduction",
+              "learn/code-lab/tutorials"
             ]
           },
           {
-            "group": "Documentation Tools",
+            "group": "Foldables & Large Screens",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "learn/foldables/overview",
+              "learn/foldables/design-guidelines"
             ]
           },
           {
-            "group": "AI Development Tools",
+            "group": "One UI Beta",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "learn/one-ui-beta/overview",
+              "learn/one-ui-beta/features"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Develop",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Mobile & Wearable",
             "pages": [
-              "api-reference/introduction"
+              "develop/mobile/android",
+              "develop/mobile/tizen",
+              "develop/wearable/galaxy-watch",
+              "develop/wearable/wear-os"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Visual Display",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "develop/tv/tizen-tv",
+              "develop/tv/smart-signage"
+            ]
+          },
+          {
+            "group": "Digital Appliance",
+            "pages": [
+              "develop/appliance/smartthings",
+              "develop/appliance/bixby"
+            ]
+          },
+          {
+            "group": "Platform",
+            "pages": [
+              "develop/platform/knox",
+              "develop/platform/one-ui"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Design",
+        "groups": [
+          {
+            "group": "Design System",
+            "pages": [
+              "design/system/overview",
+              "design/system/components"
+            ]
+          },
+          {
+            "group": "One UI",
+            "pages": [
+              "design/one-ui/guidelines",
+              "design/one-ui/resources"
+            ]
+          },
+          {
+            "group": "One UI Watch",
+            "pages": [
+              "design/one-ui-watch/guidelines",
+              "design/one-ui-watch/components"
+            ]
+          },
+          {
+            "group": "Smart TV Design",
+            "pages": [
+              "design/tv/guidelines",
+              "design/tv/templates"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Distribute",
+        "groups": [
+          {
+            "group": "Galaxy Store",
+            "pages": [
+              "distribute/galaxy-store/overview",
+              "distribute/galaxy-store/submission"
+            ]
+          },
+          {
+            "group": "TV Seller Office",
+            "pages": [
+              "distribute/tv-seller/overview",
+              "distribute/tv-seller/publishing"
+            ]
+          },
+          {
+            "group": "Instant Plays",
+            "pages": [
+              "distribute/instant-plays/overview",
+              "distribute/instant-plays/implementation"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Support",
+        "groups": [
+          {
+            "group": "Developer Support",
+            "pages": [
+              "support/overview",
+              "support/forums"
+            ]
+          },
+          {
+            "group": "Testing Tools",
+            "pages": [
+              "support/remote-test-lab",
+              "support/usb-driver"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Connect",
+        "groups": [
+          {
+            "group": "News & Updates",
+            "pages": [
+              "connect/news",
+              "connect/events"
+            ]
+          },
+          {
+            "group": "Samsung Developer Conference",
+            "pages": [
+              "connect/sdc/overview",
+              "connect/sdc/sessions"
             ]
           }
         ]
@@ -89,8 +197,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/samsung-logo.svg",
+    "dark": "/logo/samsung-logo.svg"
   },
   "navbar": {
     "links": [
