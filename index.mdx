@@ -1,97 +1,297 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "Samsung Developer Documentation"
+description: "Build extraordinary experiences for Samsung Galaxy devices with our comprehensive developer tools and resources"
 ---
 
-## Setting up
+import { Frame } from '@/components/Frame'
+import SamsungDeviceShowcase from '@/components/SamsungDeviceShowcase'
 
-Get your documentation site up and running in minutes.
+<Note>
+This is a **preview documentation** showcasing Mintlify's powerful features styled with Samsung's brand identity. Experience the future of developer documentation.
+</Note>
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
+## Welcome to Samsung Developer
 
-## Make it yours
+Build innovative apps and services for Samsung Galaxy devices with our comprehensive ecosystem of tools, SDKs, and APIs.
 
-Design a docs site that looks great and empowers your users.
-
-<Columns cols={2}>
+<CardGroup cols={2}>
   <Card
-    title="Edit locally"
-    icon="pen-to-square"
+    title="Galaxy Mobile SDK"
+    icon="mobile-screen"
+    href="/quickstart"
+    color="#1428A0"
+  >
+    Develop powerful mobile applications for Galaxy smartphones and tablets
+  </Card>
+  <Card
+    title="Galaxy Watch SDK"
+    icon="clock"
     href="/development"
+    color="#1428A0"
   >
-    Edit your docs locally and preview them in real time.
+    Create health and fitness apps for Galaxy Watch ecosystem
   </Card>
   <Card
-    title="Customize your site"
+    title="SmartThings Platform"
+    icon="house-wifi"
+    href="/api-reference/introduction"
+    color="#1428A0"
+  >
+    Connect and control IoT devices with SmartThings APIs
+  </Card>
+  <Card
+    title="Galaxy AI Features"
+    icon="brain-circuit"
+    href="/essentials/code"
+    color="#1428A0"
+  >
+    Integrate advanced AI capabilities into your applications
+  </Card>
+</CardGroup>
+
+## Developer Journey
+
+<Steps>
+<Step title="Set Up Your Environment">
+  Download Samsung SDK and configure your development environment for Galaxy devices.
+  
+  <CodeGroup>
+    ```bash Android Studio
+    # Download Samsung SDK
+    git clone https://github.com/Samsung/galaxy-sdk
+    cd galaxy-sdk
+    ./install.sh
+    ```
+    
+    ```bash VS Code
+    # Install Samsung Developer Extension
+    code --install-extension samsung.galaxy-dev-tools
+    ```
+  </CodeGroup>
+  
+  <Check>
+  Verify installation by running `samsung-sdk --version`
+  </Check>
+</Step>
+
+<Step title="Choose Your Platform">
+  Select the Samsung platform that best fits your application needs.
+  
+  <Tabs>
+    <Tab title="Galaxy Mobile">
+      Build apps for Samsung Galaxy smartphones and tablets with enhanced features like S Pen integration, DeX mode, and advanced camera APIs.
+      
+      ```kotlin
+      // Example: S Pen integration
+      class MainActivity : AppCompatActivity() {
+          override fun onCreate(savedInstanceState: Bundle?) {
+              super.onCreate(savedInstanceState)
+              
+              // Initialize S Pen features
+              val sPenManager = SPenManager.getInstance()
+              sPenManager.initialize(this)
+          }
+      }
+      ```
+    </Tab>
+    
+    <Tab title="Galaxy Watch">
+      Develop health and fitness applications for Galaxy Watch with access to advanced sensors and health data.
+      
+      ```kotlin
+      // Example: Health data access
+      val healthDataStore = HealthDataStore(context)
+      healthDataStore.getStepCount { stepCount ->
+          // Process step count data
+          updateUI(stepCount)
+      }
+      ```
+    </Tab>
+    
+    <Tab title="SmartThings">
+      Create IoT solutions that connect and control smart home devices through the SmartThings ecosystem.
+      
+      ```javascript
+      // Example: SmartThings API
+      const smartThings = new SmartThingsApi(apiToken)
+      
+      smartThings.devices.list().then(devices => {
+          devices.forEach(device => {
+              console.log(`Device: ${device.name}`)
+          })
+      })
+      ```
+    </Tab>
+  </Tabs>
+</Step>
+
+<Step title="Integrate Samsung Services">
+  Enhance your app with Samsung's unique services and capabilities.
+  
+  <Warning>
+  Make sure to register your app in the Samsung Developer Portal before accessing Samsung services.
+  </Warning>
+</Step>
+
+<Step title="Test and Deploy">
+  Test your application on Samsung devices and deploy to Galaxy Store.
+  
+  <Tip>
+  Use Samsung's Remote Test Lab to test on real devices without physical hardware.
+  </Tip>
+</Step>
+</Steps>
+
+## Featured SDKs and Tools
+
+<AccordionGroup>
+  <Accordion title="Galaxy AI SDK" icon="brain-circuit">
+    Integrate Samsung's advanced AI capabilities into your applications:
+    
+    - **Galaxy AI Translation**: Real-time language translation
+    - **Galaxy AI Vision**: Advanced image recognition and processing
+    - **Galaxy AI Voice**: Natural language processing and voice commands
+    
+    ```kotlin
+    // Example: Galaxy AI Translation
+    val translator = GalaxyAI.getTranslator()
+    translator.translate("Hello World", "ko") { translatedText ->
+        // Handle translated text: "안녕하세요"
+    }
+    ```
+  </Accordion>
+  
+  <Accordion title="Samsung Health SDK" icon="heart-pulse">
+    Access comprehensive health and fitness data from Samsung Health:
+    
+    - Heart rate monitoring
+    - Sleep tracking
+    - Step counting and activity detection
+    - Nutrition and wellness insights
+    
+    <Frame>
+      <img src="/images/hero-light.png" alt="Samsung Health Dashboard" />
+    </Frame>
+  </Accordion>
+  
+  <Accordion title="Samsung Pay SDK" icon="credit-card">
+    Integrate secure payment solutions into your applications:
+    
+    - Contactless payments
+    - Loyalty card integration
+    - Gift card management
+    - Transaction security
+  </Accordion>
+  
+  <Accordion title="Bixby Voice SDK" icon="microphone">
+    Create voice-enabled experiences with Samsung's AI assistant:
+    
+    - Custom voice commands
+    - Natural language understanding
+    - Multi-modal interactions
+    - Smart home control
+  </Accordion>
+</AccordionGroup>
+
+## Samsung Device Ecosystem
+
+Explore the devices and SDKs available for Samsung development:
+
+<SamsungDeviceShowcase />
+
+## Developer Resources
+
+Get the support you need to build amazing Samsung experiences.
+
+<CardGroup cols={3}>
+  <Card
+    title="Code Lab"
+    icon="flask"
+    href="https://developer.samsung.com/codelab"
+  >
+    Interactive tutorials and hands-on learning experiences
+  </Card>
+  <Card
+    title="Remote Test Lab"
+    icon="vial"
+    href="https://developer.samsung.com/remote-test-lab"
+  >
+    Test your apps on real Samsung devices remotely
+  </Card>
+  <Card
+    title="Developer Forums"
+    icon="users"
+    href="https://forum.developer.samsung.com"
+  >
+    Connect with Samsung developer community
+  </Card>
+  <Card
+    title="Galaxy Store"
+    icon="store"
+    href="https://galaxystore.samsung.com"
+  >
+    Distribute your apps to millions of users
+  </Card>
+  <Card
+    title="Design System"
     icon="palette"
-    href="/essentials/settings"
+    href="https://developer.samsung.com/one-ui"
   >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
+    Follow One UI design guidelines
   </Card>
   <Card
-    title="API documentation"
-    icon="terminal"
+    title="API Documentation"
+    icon="book-open"
     href="/api-reference/introduction"
   >
-    Auto-generate API documentation from OpenAPI specifications.
+    Comprehensive API references and guides
   </Card>
-</Columns>
+</CardGroup>
 
-## Create beautiful pages
+## Latest Updates
 
-Everything you need to create world-class documentation.
+<Update description="November 2024">
+  ### Galaxy AI SDK 2.0 Released
+  
+  Enhanced AI capabilities with improved performance and new features:
+  - Real-time object detection
+  - Advanced natural language processing
+  - Improved translation accuracy
+  - New voice synthesis options
+</Update>
+
+## Getting Started
+
+Ready to start building? Choose your path:
 
 <Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
+  <div>
+    ### New to Samsung Development?
+    
+    <Card
+      title="Quick Start Guide"
+      icon="rocket"
+      href="/quickstart"
+      horizontal
+    >
+      Get up and running in 10 minutes with our comprehensive guide.
+    </Card>
+  </div>
+  
+  <div>
+    ### Experienced Developer?
+    
+    <Card
+      title="API Reference"
+      icon="code"
+      href="/api-reference/introduction"
+      horizontal
+    >
+      Jump straight into our detailed API documentation.
+    </Card>
+  </div>
 </Columns>
 
-## Need inspiration?
-
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+<Info>
+This documentation is powered by **Mintlify** - showcasing advanced documentation features including custom React components, interactive code examples, and beautiful styling that adapts to your brand.
+</Info>
