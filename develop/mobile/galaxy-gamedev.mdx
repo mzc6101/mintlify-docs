@@ -7,237 +7,673 @@ icon: "gamepad"
 "og:image": "/images/galaxy-gamedev-hero.png"
 ---
 
-import { Card, CardGroup } from '/components/Card'
-import { Button } from '/components/Button'
-import { Hero } from '/components/Hero'
-import { FeatureCard } from '/components/FeatureCard'
-
-<div className="galaxy-gamedev-page">
+<div style={{
+  width: '100%',
+  minHeight: '100vh',
+  background: '#ffffff',
+  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+}}>
 
 {/* Hero Section */}
-<section className="hero-section" style={{ background: 'linear-gradient(135deg, #1428A0 0%, #4A6CF7 100%)', padding: '80px 0', textAlign: 'center', color: 'white' }}>
-  <div className="container">
-    <h1 className="hero-title" style={{ fontSize: '3.5rem', fontWeight: 'bold', marginBottom: '24px' }}>
-      Galaxy GameDev
+<section style={{
+  padding: '6rem 2rem 4rem',
+  background: 'linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%)',
+  borderBottom: '1px solid #e2e8f0'
+}}>
+  <div style={{
+    maxWidth: '1200px',
+    margin: '0 auto',
+    textAlign: 'center'
+  }}>
+    <div style={{
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: '0.75rem',
+      background: '#ffffff',
+      padding: '0.5rem 1rem',
+      borderRadius: '50px',
+      border: '1px solid #e2e8f0',
+      marginBottom: '2rem',
+      boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)'
+    }}>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1428A0" strokeWidth="2">
+        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+        <line x1="8" y1="21" x2="16" y2="21"/>
+        <line x1="12" y1="17" x2="12" y2="21"/>
+      </svg>
+      <span style={{ color: '#1428A0', fontWeight: '600', fontSize: '0.875rem' }}>GALAXY GAMEDEV</span>
+    </div>
+    
+    <h1 style={{
+      fontSize: '4rem',
+      fontWeight: '700',
+      lineHeight: '1.1',
+      marginBottom: '1.5rem',
+      color: '#0f172a',
+      letterSpacing: '-0.025em'
+    }}>
+      Game Development <br/>
+      <span style={{ color: '#1428A0' }}>Made Better</span>
     </h1>
-    <p style={{ fontSize: '1.25rem', maxWidth: '800px', margin: '0 auto', opacity: '0.9' }}>
-      Galaxy GameDev provides various technical support options to assist game developers.
+    
+    <p style={{
+      fontSize: '1.25rem',
+      lineHeight: '1.6',
+      color: '#64748b',
+      maxWidth: '700px',
+      margin: '0 auto 3rem',
+      fontWeight: '400'
+    }}>
+      Galaxy GameDev provides comprehensive technical support, performance optimization tools, and resources to help game developers create exceptional experiences on Samsung Galaxy devices.
+    </p>
+    
+    <div style={{
+      display: 'flex',
+      gap: '1rem',
+      justifyContent: 'center',
+      flexWrap: 'wrap'
+    }}>
+      <button style={{
+        background: '#1428A0',
+        color: 'white',
+        border: 'none',
+        padding: '0.875rem 2rem',
+        borderRadius: '8px',
+        fontSize: '1rem',
+        fontWeight: '600',
+        cursor: 'pointer',
+        transition: 'all 0.2s ease',
+        boxShadow: '0 1px 3px rgba(20, 40, 160, 0.3)'
+      }}>
+        Get Started
+      </button>
+      <button style={{
+        background: 'transparent',
+        color: '#475569',
+        border: '1px solid #e2e8f0',
+        padding: '0.875rem 2rem',
+        borderRadius: '8px',
+        fontSize: '1rem',
+        fontWeight: '600',
+        cursor: 'pointer',
+        transition: 'all 0.2s ease'
+      }}>
+        View Documentation
+      </button>
+    </div>
+  </div>
+</section>
+
+{/* Core Features Section */}
+<section style={{
+  padding: '6rem 2rem',
+  maxWidth: '1200px',
+  margin: '0 auto'
+}}>
+  <div style={{
+    textAlign: 'center',
+    marginBottom: '4rem'
+  }}>
+    <h2 style={{
+      fontSize: '3rem',
+      fontWeight: '700',
+      color: '#0f172a',
+      marginBottom: '1rem',
+      letterSpacing: '-0.025em'
+    }}>
+      Core Features
+    </h2>
+    <p style={{
+      fontSize: '1.25rem',
+      color: '#64748b',
+      maxWidth: '600px',
+      margin: '0 auto'
+    }}>
+      Everything you need to build high-performance games for Galaxy devices
     </p>
   </div>
-</section>
 
-{/* Related Materials Section */}
-<section className="related-materials" style={{ padding: '80px 0' }}>
-  <div className="container">
-    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-      <h2 style={{ fontSize: '2.5rem', marginBottom: '16px', color: '#1428A0' }}>Related Materials</h2>
-      <p style={{ fontSize: '1.125rem', color: '#666' }}>Get support via our technical documents and online resources.</p>
-    </div>
-    
-    <CardGroup cols={3}>
-      <Card 
-        title="Galaxy GameDev Overview" 
-        icon="info"
-        href="/galaxy-gamedev/overview"
-      >
-        Learn about joining Galaxy GameDev and best practices for game developers
-      </Card>
-      
-      <Card 
-        title="Best Practices" 
-        icon="lightbulb"
-        href="/galaxy-gamedev/best-practices"
-      >
-        Find useful tips, know-hows and GameDev's stories in our technical blogs
-      </Card>
-      
-      <Card 
-        title="Adaptive Performance" 
-        icon="chart-line"
-        href="/galaxy-gamedev/adaptive-performance"
-      >
-        Adaptive Performance provides that way to manage both the thermals and performance of a game on a mobile device
-      </Card>
-      
-      <Card 
-        title="GPUWatch" 
-        icon="eye"
-        href="/galaxy-gamedev/gpuwatch"
-      >
-        GPUWatch is a tool for observing GPU activity in your apps. You can find out how to use it and which devices support it here
-      </Card>
-      
-      <Card 
-        title="Resources" 
-        icon="folder-open"
-        href="/galaxy-gamedev/resources"
-      >
-        Articles, white papers, and interesting code samples for game developers
-      </Card>
-      
-      <Card 
-        title="Event Archive" 
-        icon="video"
-        href="/galaxy-gamedev/event-archive"
-      >
-        Videos and slides of key technical presentations from a variety of developer events
-      </Card>
-    </CardGroup>
-  </div>
-</section>
-
-{/* Feature Sections */}
-<section className="features" style={{ background: '#f8f9fa', padding: '80px 0' }}>
-  <div className="container">
-    
-    {/* What is Galaxy GameDev */}
-    <div className="feature-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center', marginBottom: '80px' }}>
-      <div>
-        <img 
-          src="https://d3unf4s5rp9dfh.cloudfront.net/GAMEDEV/GalaxyGameDev_Card.jpg" 
-          alt="Galaxy GameDev" 
-          style={{ width: '100%', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}
-        />
-      </div>
-      <div>
-        <h2 style={{ fontSize: '2.25rem', marginBottom: '24px', color: '#1428A0' }}>
-          What is Galaxy GameDev and what do we do?
-        </h2>
-        <p style={{ fontSize: '1.125rem', color: '#666', lineHeight: '1.6', marginBottom: '32px' }}>
-          Through this program, we collaborate with many key partners in the gaming industry to support game developers with early engagement of new technologies for better gaming experiences
-        </p>
-        <Button href="/galaxy-gamedev/overview" variant="outline">
-          Read More
-        </Button>
-      </div>
-    </div>
-    
-    {/* Adaptive Performance */}
-    <div className="feature-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center', marginBottom: '80px' }}>
-      <div>
-        <h2 style={{ fontSize: '2.25rem', marginBottom: '24px', color: '#1428A0' }}>
-          Adaptive Performance
-        </h2>
-        <p style={{ fontSize: '1.125rem', color: '#666', lineHeight: '1.6', marginBottom: '32px' }}>
-          The Adaptive Performance package provides an API to get feedback about the thermal and power state of mobile devices, enabling applications to make performance-relevant adaptions at runtime.
-        </p>
-        <div style={{ display: 'flex', gap: '16px' }}>
-          <Button href="/galaxy-gamedev/adaptive-performance" variant="outline">
-            Read More
-          </Button>
-          <Button href="/codelab/gamedev/adaptive-performance">
-            Code Lab
-          </Button>
+  <div style={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))',
+    gap: '1.5rem'
+  }}>
+    {/* Adaptive Performance Card */}
+    <div style={{
+      background: '#ffffff',
+      border: '1px solid #e2e8f0',
+      borderRadius: '16px',
+      padding: '2rem',
+      transition: 'all 0.2s ease',
+      cursor: 'pointer',
+      boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)'
+    }} onMouseEnter={(e) => {
+      e.target.style.borderColor = '#cbd5e1';
+      e.target.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)';
+      e.target.style.transform = 'translateY(-2px)';
+    }} onMouseLeave={(e) => {
+      e.target.style.borderColor = '#e2e8f0';
+      e.target.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
+      e.target.style.transform = 'translateY(0)';
+    }}>
+      <div style={{
+        display: 'flex',
+        alignItems: 'flex-start',
+        gap: '1.5rem'
+      }}>
+        <div style={{
+          width: '48px',
+          height: '48px',
+          background: '#f6f8fa',
+          borderRadius: '12px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          flexShrink: 0
+        }}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#656d76" strokeWidth="2">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+        </div>
+        <div style={{ flex: 1 }}>
+          <h3 style={{ 
+            fontSize: '1.25rem', 
+            fontWeight: '600', 
+            marginBottom: '0.75rem',
+            color: '#0f172a',
+            lineHeight: '1.3'
+          }}>
+            Adaptive Performance
+          </h3>
+          <p style={{ 
+            fontSize: '1rem', 
+            color: '#64748b',
+            lineHeight: '1.6',
+            margin: 0
+          }}>
+            Get real-time feedback about thermal and power states to optimize game performance dynamically on mobile devices.
+          </p>
         </div>
       </div>
-      <div>
-        <img 
-          src="https://d3unf4s5rp9dfh.cloudfront.net/GAMEDEV/Adp_Card.jpg" 
-          alt="Adaptive Performance" 
-          style={{ width: '100%', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}
-        />
+    </div>
+
+    {/* GPUWatch Card */}
+    <div style={{
+      background: '#ffffff',
+      border: '1px solid #e2e8f0',
+      borderRadius: '16px',
+      padding: '2rem',
+      transition: 'all 0.2s ease',
+      cursor: 'pointer',
+      boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)'
+    }} onMouseEnter={(e) => {
+      e.target.style.borderColor = '#cbd5e1';
+      e.target.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)';
+      e.target.style.transform = 'translateY(-2px)';
+    }} onMouseLeave={(e) => {
+      e.target.style.borderColor = '#e2e8f0';
+      e.target.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
+      e.target.style.transform = 'translateY(0)';
+    }}>
+      <div style={{
+        display: 'flex',
+        alignItems: 'flex-start',
+        gap: '1.5rem'
+      }}>
+        <div style={{
+          width: '48px',
+          height: '48px',
+          background: '#f6f8fa',
+          borderRadius: '12px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          flexShrink: 0
+        }}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#656d76" strokeWidth="2">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </div>
+        <div style={{ flex: 1 }}>
+          <h3 style={{ 
+            fontSize: '1.25rem', 
+            fontWeight: '600', 
+            marginBottom: '0.75rem',
+            color: '#0f172a',
+            lineHeight: '1.3'
+          }}>
+            GPUWatch
+          </h3>
+          <p style={{ 
+            fontSize: '1rem', 
+            color: '#64748b',
+            lineHeight: '1.6',
+            margin: 0
+          }}>
+            Monitor GPU activity and performance in your applications with detailed insights and supported device compatibility.
+          </p>
+        </div>
       </div>
     </div>
-    
-    {/* Community */}
-    <div className="feature-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }}>
-      <div>
-        <img 
-          src="https://d3unf4s5rp9dfh.cloudfront.net/public/df_assets/contents/banner_landing_common_community.jpg" 
-          alt="Developer Community" 
-          style={{ width: '100%', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}
-        />
-      </div>
-      <div>
-        <h2 style={{ fontSize: '2.25rem', marginBottom: '24px', color: '#1428A0' }}>
-          Looking for a Community?
-        </h2>
-        <p style={{ fontSize: '1.125rem', color: '#666', lineHeight: '1.6', marginBottom: '32px' }}>
-          Meet other developers. Ask questions. Find answers.
-        </p>
-        <Button href="https://forum.developer.samsung.com/c/game-dev/44" variant="outline" external>
-          Join the Community
-        </Button>
+
+    {/* Best Practices Card */}
+    <div style={{
+      background: '#ffffff',
+      border: '1px solid #e2e8f0',
+      borderRadius: '16px',
+      padding: '2rem',
+      transition: 'all 0.2s ease',
+      cursor: 'pointer',
+      boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)'
+    }} onMouseEnter={(e) => {
+      e.target.style.borderColor = '#cbd5e1';
+      e.target.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)';
+      e.target.style.transform = 'translateY(-2px)';
+    }} onMouseLeave={(e) => {
+      e.target.style.borderColor = '#e2e8f0';
+      e.target.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
+      e.target.style.transform = 'translateY(0)';
+    }}>
+      <div style={{
+        display: 'flex',
+        alignItems: 'flex-start',
+        gap: '1.5rem'
+      }}>
+        <div style={{
+          width: '48px',
+          height: '48px',
+          background: '#f6f8fa',
+          borderRadius: '12px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          flexShrink: 0
+        }}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#656d76" strokeWidth="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="9,12 l2,2 4,-4"/>
+          </svg>
+        </div>
+        <div style={{ flex: 1 }}>
+          <h3 style={{ 
+            fontSize: '1.25rem', 
+            fontWeight: '600', 
+            marginBottom: '0.75rem',
+            color: '#0f172a',
+            lineHeight: '1.3'
+          }}>
+            Best Practices
+          </h3>
+          <p style={{ 
+            fontSize: '1rem', 
+            color: '#64748b',
+            lineHeight: '1.6',
+            margin: 0
+          }}>
+            Learn proven techniques, tips, and developer stories from our comprehensive technical documentation and guides.
+          </p>
+        </div>
       </div>
     </div>
-    
+
+    {/* Resources Card */}
+    <div style={{
+      background: '#ffffff',
+      border: '1px solid #e2e8f0',
+      borderRadius: '16px',
+      padding: '2rem',
+      transition: 'all 0.2s ease',
+      cursor: 'pointer',
+      boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)'
+    }} onMouseEnter={(e) => {
+      e.target.style.borderColor = '#cbd5e1';
+      e.target.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)';
+      e.target.style.transform = 'translateY(-2px)';
+    }} onMouseLeave={(e) => {
+      e.target.style.borderColor = '#e2e8f0';
+      e.target.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
+      e.target.style.transform = 'translateY(0)';
+    }}>
+      <div style={{
+        display: 'flex',
+        alignItems: 'flex-start',
+        gap: '1.5rem'
+      }}>
+        <div style={{
+          width: '48px',
+          height: '48px',
+          background: '#f6f8fa',
+          borderRadius: '12px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          flexShrink: 0
+        }}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#656d76" strokeWidth="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14,2 14,8 20,8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+            <polyline points="10,9 9,9 8,9"/>
+          </svg>
+        </div>
+        <div style={{ flex: 1 }}>
+          <h3 style={{ 
+            fontSize: '1.25rem', 
+            fontWeight: '600', 
+            marginBottom: '0.75rem',
+            color: '#0f172a',
+            lineHeight: '1.3'
+          }}>
+            Documentation & Resources
+          </h3>
+          <p style={{ 
+            fontSize: '1rem', 
+            color: '#64748b',
+            lineHeight: '1.6',
+            margin: 0
+          }}>
+            Access white papers, code samples, and comprehensive documentation designed for game developers.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Community Card */}
+    <div style={{
+      background: '#ffffff',
+      border: '1px solid #e2e8f0',
+      borderRadius: '16px',
+      padding: '2rem',
+      transition: 'all 0.2s ease',
+      cursor: 'pointer',
+      boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)'
+    }} onMouseEnter={(e) => {
+      e.target.style.borderColor = '#cbd5e1';
+      e.target.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)';
+      e.target.style.transform = 'translateY(-2px)';
+    }} onMouseLeave={(e) => {
+      e.target.style.borderColor = '#e2e8f0';
+      e.target.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
+      e.target.style.transform = 'translateY(0)';
+    }}>
+      <div style={{
+        display: 'flex',
+        alignItems: 'flex-start',
+        gap: '1.5rem'
+      }}>
+        <div style={{
+          width: '48px',
+          height: '48px',
+          background: '#f6f8fa',
+          borderRadius: '12px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          flexShrink: 0
+        }}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#656d76" strokeWidth="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <div style={{ flex: 1 }}>
+          <h3 style={{ 
+            fontSize: '1.25rem', 
+            fontWeight: '600', 
+            marginBottom: '0.75rem',
+            color: '#0f172a',
+            lineHeight: '1.3'
+          }}>
+            Developer Community
+          </h3>
+          <p style={{ 
+            fontSize: '1rem', 
+            color: '#64748b',
+            lineHeight: '1.6',
+            margin: 0
+          }}>
+            Connect with other game developers, ask questions, share knowledge, and get support from the community.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Event Archive Card */}
+    <div style={{
+      background: '#ffffff',
+      border: '1px solid #e2e8f0',
+      borderRadius: '16px',
+      padding: '2rem',
+      transition: 'all 0.2s ease',
+      cursor: 'pointer',
+      boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)'
+    }} onMouseEnter={(e) => {
+      e.target.style.borderColor = '#cbd5e1';
+      e.target.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)';
+      e.target.style.transform = 'translateY(-2px)';
+    }} onMouseLeave={(e) => {
+      e.target.style.borderColor = '#e2e8f0';
+      e.target.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
+      e.target.style.transform = 'translateY(0)';
+    }}>
+      <div style={{
+        display: 'flex',
+        alignItems: 'flex-start',
+        gap: '1.5rem'
+      }}>
+        <div style={{
+          width: '48px',
+          height: '48px',
+          background: '#f6f8fa',
+          borderRadius: '12px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          flexShrink: 0
+        }}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#656d76" strokeWidth="2">
+            <polygon points="23 7 16 12 23 17 23 7"/>
+            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+          </svg>
+        </div>
+        <div style={{ flex: 1 }}>
+          <h3 style={{ 
+            fontSize: '1.25rem', 
+            fontWeight: '600', 
+            marginBottom: '0.75rem',
+            color: '#0f172a',
+            lineHeight: '1.3'
+          }}>
+            Event Archive
+          </h3>
+          <p style={{ 
+            fontSize: '1rem', 
+            color: '#64748b',
+            lineHeight: '1.6',
+            margin: 0
+          }}>
+            Watch videos and access slides from key technical presentations at developer events and conferences.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-{/* Quick Links */}
-<section className="quick-links" style={{ padding: '80px 0' }}>
-  <div className="container">
-    <h2 style={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: '48px', color: '#1428A0' }}>
-      Quick Links
-    </h2>
-    
-    <CardGroup cols={2}>
-      <Card 
-        title="Game Development Resources"
-        icon="book"
-        href="/galaxy-gamedev/resources"
-        style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: 'white', minHeight: '200px' }}
-      >
-        <div style={{ color: 'white' }}>
-          <div style={{ background: 'rgba(255,255,255,0.2)', display: 'inline-block', padding: '4px 12px', borderRadius: '20px', marginBottom: '16px' }}>
-            Resources
+{/* What is Galaxy GameDev Section */}
+<section style={{
+  padding: '6rem 2rem',
+  background: '#f8fafc',
+  borderTop: '1px solid #e2e8f0'
+}}>
+  <div style={{
+    maxWidth: '1200px',
+    margin: '0 auto'
+  }}>
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: '4rem',
+      alignItems: 'center'
+    }}>
+      <div>
+        <div style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '0.5rem',
+          background: '#ffffff',
+          padding: '0.5rem 1rem',
+          borderRadius: '50px',
+          border: '1px solid #e2e8f0',
+          marginBottom: '2rem',
+          boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)'
+        }}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1428A0" strokeWidth="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M9,12 l2,2 4,-4"/>
+          </svg>
+          <span style={{ color: '#1428A0', fontWeight: '600', fontSize: '0.75rem' }}>ABOUT</span>
+        </div>
+        
+        <h2 style={{
+          fontSize: '2.5rem',
+          fontWeight: '700',
+          lineHeight: '1.2',
+          marginBottom: '1.5rem',
+          color: '#0f172a',
+          letterSpacing: '-0.025em'
+        }}>
+          What is Galaxy GameDev?
+        </h2>
+        
+        <p style={{
+          fontSize: '1.125rem',
+          lineHeight: '1.6',
+          color: '#64748b',
+          marginBottom: '2rem'
+        }}>
+          Galaxy GameDev is a comprehensive program that collaborates with key partners in the gaming industry to support game developers with early engagement of new technologies for better gaming experiences on Samsung Galaxy devices.
+        </p>
+        
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '1rem'
+        }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.75rem'
+          }}>
+            <div style={{
+              width: '24px',
+              height: '24px',
+              background: '#f0f9ff',
+              borderRadius: '50%',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1428A0" strokeWidth="2">
+                <path d="M9,12 l2,2 4,-4"/>
+              </svg>
+            </div>
+            <span style={{ color: '#475569', fontSize: '1rem' }}>Technical support and resources</span>
           </div>
-          <p>Access comprehensive documentation, white papers, and code samples specifically designed for game developers working with Samsung devices.</p>
-        </div>
-      </Card>
-      
-      <Card 
-        title="Performance Optimization"
-        icon="tachometer-alt"
-        href="/galaxy-gamedev/adaptive-performance"
-        style={{ background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', color: 'white', minHeight: '200px' }}
-      >
-        <div style={{ color: 'white' }}>
-          <div style={{ background: 'rgba(255,255,255,0.2)', display: 'inline-block', padding: '4px 12px', borderRadius: '20px', marginBottom: '16px' }}>
-            Performance
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.75rem'
+          }}>
+            <div style={{
+              width: '24px',
+              height: '24px',
+              background: '#f0f9ff',
+              borderRadius: '50%',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1428A0" strokeWidth="2">
+                <path d="M9,12 l2,2 4,-4"/>
+              </svg>
+            </div>
+            <span style={{ color: '#475569', fontSize: '1rem' }}>Performance optimization tools</span>
           </div>
-          <p>Learn how to optimize your games for Samsung Galaxy devices using Adaptive Performance and other advanced tools.</p>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.75rem'
+          }}>
+            <div style={{
+              width: '24px',
+              height: '24px',
+              background: '#f0f9ff',
+              borderRadius: '50%',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1428A0" strokeWidth="2">
+                <path d="M9,12 l2,2 4,-4"/>
+              </svg>
+            </div>
+            <span style={{ color: '#475569', fontSize: '1rem' }}>Developer community access</span>
+          </div>
         </div>
-      </Card>
-    </CardGroup>
+      </div>
+      
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}>
+        <div style={{
+          width: '400px',
+          height: '300px',
+          background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
+          borderRadius: '20px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          border: '1px solid #e2e8f0',
+          position: 'relative',
+          overflow: 'hidden'
+        }}>
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+            opacity: 0.5
+          }}></div>
+          <div style={{
+            textAlign: 'center',
+            color: '#64748b'
+          }}>
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" strokeWidth="1">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+            <div style={{
+              marginTop: '1rem',
+              fontSize: '1.125rem',
+              fontWeight: '600',
+              color: '#475569'
+            }}>
+              Galaxy GameDev Platform
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-
 </div>
-
-<style>{`
-  .galaxy-gamedev-page {
-    font-family: 'Samsung One', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  }
-  
-  .galaxy-gamedev-page .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-  
-  .galaxy-gamedev-page h1, 
-  .galaxy-gamedev-page h2, 
-  .galaxy-gamedev-page h3 {
-    margin: 0;
-  }
-  
-  .galaxy-gamedev-page section {
-    position: relative;
-  }
-  
-  @media (max-width: 768px) {
-    .galaxy-gamedev-page .hero-title {
-      font-size: 2.5rem !important;
-    }
-    
-    .galaxy-gamedev-page .feature-row {
-      grid-template-columns: 1fr !important;
-      gap: 40px !important;
-    }
-    
-    .galaxy-gamedev-page .CardGroup {
-      grid-template-columns: 1fr !important;
-    }
-  }
-`}</style>
