@@ -1,7 +1,7 @@
-<svg width="180" height="24" viewBox="0 0 180 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="220" height="32" viewBox="0 0 220 32" fill="none" xmlns="http://www.w3.org/2000/svg">
   <!-- Samsung text (bold) -->
-  <text x="0" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="currentColor">Samsung</text>
+  <text x="0" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="currentColor">Samsung</text>
   
   <!-- Developer text (normal weight) -->
-  <text x="85" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="400" fill="currentColor">Developer</text>
+  <text x="95" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="currentColor">Developer</text>
 </svg>
