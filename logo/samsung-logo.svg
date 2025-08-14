@@ -1,11 +1,7 @@
-<svg width="140" height="32" viewBox="0 0 140 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Samsung Logo -->
-  <g>
-    <!-- Samsung text -->
-    <text x="0" y="22" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="currentColor">Samsung</text>
-    <!-- Developer text -->
-    <text x="80" y="22" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="currentColor">Developer</text>
-    <!-- Small underline -->
-    <rect x="0" y="26" width="72" height="2" fill="#1428A0"/>
-  </g>
+<svg width="140" height="24" viewBox="0 0 140 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Samsung text (bold) -->
+  <text x="0" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="currentColor">Samsung</text>
+  
+  <!-- Developer text (normal weight) -->
+  <text x="80" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="400" fill="currentColor">Developer</text>
 </svg>
