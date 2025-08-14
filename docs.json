@@ -51,6 +51,7 @@
             "pages": [
               "develop/mobile/android",
               "develop/mobile/tizen",
+              "develop/mobile/galaxy-gamedev",
               "develop/wearable/galaxy-watch",
               "develop/wearable/wear-os"
             ]
