@@ -1,2 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Error><Code>AccessDenied</Code><Message>Access Denied</Message></Error>
+<svg width="120" height="24" viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clipPath="url(#clip0)">
+    <path d="M2.4 6.8C2.4 5.2 3.6 4 5.2 4H14.8C16.4 4 17.6 5.2 17.6 6.8V17.2C17.6 18.8 16.4 20 14.8 20H5.2C3.6 20 2.4 18.8 2.4 17.2V6.8Z" fill="currentColor"/>
+    <path d="M6.4 8.8C6.4 8.35817 6.75817 8 7.2 8H12.8C13.2418 8 13.6 8.35817 13.6 8.8V15.2C13.6 15.6418 13.2418 16 12.8 16H7.2C6.75817 16 6.4 15.6418 6.4 15.2V8.8Z" fill="white"/>
+    <text x="22" y="16" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="currentColor">Samsung</text>
+    <text x="22" y="8" font-family="Arial, sans-serif" font-size="10" fill="currentColor" opacity="0.7">DEVELOPER</text>
+  </g>
+  <defs>
+    <clipPath id="clip0">
+      <rect width="120" height="24" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>
